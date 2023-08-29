@@ -1,0 +1,36 @@
+.div {
+  margin: 15px;
+  padding: 10px;
+}
+.ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px;
+  align-items: stretch;
+}
+/* .li {
+  } */
+.img {
+  width: 100px;
+  height: 120px;
+}
+.description {
+  margin: 5px;
+  padding: 5px;
+  width: 90px;
+  height: auto;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  white-space: pre-wrap;
+}
+.name {
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: auto;
+}
+/* .character {
+  } */

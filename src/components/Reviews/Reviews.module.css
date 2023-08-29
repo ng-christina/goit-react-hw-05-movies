@@ -1,0 +1,17 @@
+.list {
+  margin: 15px;
+  padding: 10px;
+}
+.element {
+  margin-bottom: 10px;
+}
+.author {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.content {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
