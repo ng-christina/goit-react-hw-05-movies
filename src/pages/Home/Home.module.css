@@ -10,7 +10,7 @@
   text-align: center;
   height: 40px;
 
-  color: #4e4e4e;
+  color: #ffffff;
 
   font-family: inherit;
   font-size: 35px;
@@ -19,4 +19,13 @@
   font-weight: 700;
 
   margin-bottom: 15px;
+  animation: glow 1s infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 15px #131313, 0 0 20px #4d4c4f, 0 0 30px #cccccc;
+  }
+  to {
+    text-shadow: 0 0 15px #838488, 0 0 10px #dcdcdcbe, 0 0 15px #d5d5d5;
+  }
 }

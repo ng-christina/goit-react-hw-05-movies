@@ -16,7 +16,6 @@ const MovieDetails = () => {
   if (!movie) {
     return null;
   }
-
   const {
     poster_path,
     original_title,
@@ -30,12 +29,10 @@ const MovieDetails = () => {
 
   return (
     <>
-      <div>
-        <NavLink to={location.state?.from ?? '/'} className={style.back}>
-          Go back
-        </NavLink>
-      </div>
-      <div>
+      <NavLink to={location.state?.from ?? '/'} className={style.back}>
+        Go back
+      </NavLink>
+      <div className={style.div}>
         <img
           className={style.img}
           src={
@@ -46,17 +43,23 @@ const MovieDetails = () => {
           alt={original_title || original_name}
           width="300"
         />
-        <div className={style.div}>
+        <div>
           <h2 className={style.name}>
             {original_title || original_name} ({release_date || first_air_date})
           </h2>
-          <p>User Score: {`${Math.round(vote_average * 10)}%`}</p>
-          <h3 className={style.overviewTitle}>Overview</h3>
-          <p className={style.overview}>{overview}</p>
+          <p className={style.text}>
+            User Score: {`${Math.round(vote_average * 10)}%`}
+          </p>
+          <h3 className={style.title}>Overview</h3>
+          <p className={style.text}>{overview}</p>
           <h3>Genres</h3>
           <ul className={style.ul}>
             {genres.map(genre => (
-              <li key={genre.id} style={{ marginRight: '10px' }}>
+              <li
+                className={style.text}
+                key={genre.id}
+                style={{ marginRight: '10px' }}
+              >
                 {genre.name}
               </li>
             ))}
@@ -64,15 +67,15 @@ const MovieDetails = () => {
         </div>
       </div>
       <div>
-        <h3 className={style.info}>Additional Information</h3>
-        <ul>
+        <h3 className={style.name}>Additional Information</h3>
+        <ul className={style.div}>
           <li>
-            <NavLink to="cast" state={location.state}>
+            <NavLink className={style.link} to="cast" state={location.state}>
               Cast
             </NavLink>{' '}
           </li>
           <li>
-            <NavLink to="reviews" state={location.state}>
+            <NavLink className={style.link} to="reviews" state={location.state}>
               Reviews
             </NavLink>{' '}
           </li>

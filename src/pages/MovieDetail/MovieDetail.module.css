@@ -1,0 +1,54 @@
+.div {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+
+  margin: 30px auto;
+  padding-left: 125px;
+  padding-right: 125px;
+}
+.back {
+  text-align: center;
+  height: 40px;
+
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 35px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 700;
+
+  margin-bottom: 15px;
+
+  text-decoration: none;
+}
+.img {
+  width: 100%;
+}
+.name {
+  font-family: inherit;
+  font-size: 30px;
+  line-height: 24px;
+  font-style: normal;
+  margin-bottom: 11px;
+}
+.title {
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+
+  margin-bottom: 11px;
+}
+.text {
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 11px;
+  margin-left: 15px;
+  width: 720px;
+}
+.link {
+  text-decoration: none;
+  margin-top: 5px;
+}
