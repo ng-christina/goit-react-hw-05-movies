@@ -1,0 +1,22 @@
+.maine {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+.trendTitle {
+  text-align: center;
+  height: 40px;
+
+  color: #4e4e4e;
+
+  font-family: inherit;
+  font-size: 35px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}

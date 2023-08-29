@@ -21,7 +21,7 @@ const Home = () => {
   };
 
   return (
-    <main>
+    <main className={style.maine}>
       <h2 className={style.trendTitle}>Trending today </h2>
       <MovieL movies={movies} />
       {total_results / 20 >= page && (
